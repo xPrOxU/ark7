@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Wyszukiwarka miast</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon"  href="fav.png">
+    </head>
+    <body>
+        <section>
+            <header>
+                <img src="baner.jpg" alt="Polska">
+            </header>
+        </section>
+        <main style="display: flex;">
+            <section id="lewe">
+                <section id="gorny">
+                    <h4>Podaj początek nazwy miasta</h4>
+                    <form action="index.html" method="post">
+                        <input type="text" name="szukaj">
+                        <input type="submit" value="Szukaj">
+                    </form>
+                </section>
+                <section id="dolny">
+                    <p>Egzamin INF.03</p><br>
+                    <p>Autor: Wojciech Pawluk</p>
+                </section>
+            </section>
+            <section id="prawy">
+                <h1>Wyniki wyszukiwania miast z uwzględnieniem filtra:</h1>
+                <section onload="skrypt()"></section>
+            </section>
+        </main>
+    </body>
+</html>
